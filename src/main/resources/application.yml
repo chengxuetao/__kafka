@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/octet-stream
+info: 
+  service-info: kafka-service
+  api-doc: /swagger-ui.html
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  application:
+    name: kafka-service
